@@ -1,0 +1,15 @@
+[package]
+name = "inkwatchy-pc-api"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+log = "0.4"
+env_logger = "0.10"
+# Enigo doesn't work, only text() not key()
+# enigo = { git = "https://github.com/enigo-rs/enigo.git", features = ["wayland"], default-features = false} # Idk about wayland here, you might need to remove it
+clap = { version = "4.5.4", features = ["derive"] }
+num = "0.4"
+num-derive = "0.3"
+num-traits = "0.2.19"
+
